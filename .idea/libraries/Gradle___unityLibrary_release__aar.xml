@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: :unityLibrary-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/745703736f6cdcf787b2fdd8da9387aa/jetified-unityLibrary-release/jars/libs/EasyMovieTexture.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/745703736f6cdcf787b2fdd8da9387aa/jetified-unityLibrary-release/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/745703736f6cdcf787b2fdd8da9387aa/jetified-unityLibrary-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/745703736f6cdcf787b2fdd8da9387aa/jetified-unityLibrary-release/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/745703736f6cdcf787b2fdd8da9387aa/jetified-unityLibrary-release/jars/libs/zip_file.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/745703736f6cdcf787b2fdd8da9387aa/jetified-unityLibrary-release/jars/libs/unity-classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

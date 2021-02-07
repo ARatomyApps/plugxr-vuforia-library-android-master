@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: :VuforiaWrapper:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6053e8465cae953e41cba01cd345ce5b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d1aa68e8f35f6c6958506597140c2c1/jetified-VuforiaWrapper/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12427f69d1d5cdfa4ab264029be43d8d/jetified-VuforiaWrapper/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12427f69d1d5cdfa4ab264029be43d8d/jetified-VuforiaWrapper/jars/libs/VuforiaUnityPlayer.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12427f69d1d5cdfa4ab264029be43d8d/jetified-VuforiaWrapper/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12427f69d1d5cdfa4ab264029be43d8d/jetified-VuforiaWrapper/jars/libs/Vuforia.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12427f69d1d5cdfa4ab264029be43d8d/jetified-VuforiaWrapper/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

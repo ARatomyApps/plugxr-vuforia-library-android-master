@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.app.librarybuildtest"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        doNotStrip '*/armeabi-v7a/*.so'
+        doNotStrip '*/arm64-v8a/*.so'
+    }
+    bundle {
+        language {
+            enableSplit = false
+        }
+        density {
+            enableSplit = false
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'androidx.appcompat:appcompat:1.1.0'
+        implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+        androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+       // implementation 'com.github.plugxr:plugxr-vuforia-library-android:0.02'
+        implementation project(':plugxrvuforia')
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-auth:20.0.2'
+    implementation 'com.google.firebase:firebase-functions:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    implementation 'com.google.firebase:firebase-firestore:22.0.2'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.1'
+    implementation project(path: ':plugxrvuforia')
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation (name: 'VuforiaWrapper', ext:'aar')
+    implementation(name: 'unityLibrary-release', ext:'aar')
+    implementation 'com.mcxiaoke.volley:library:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.android.support:multidex:1.0.3'
+}
